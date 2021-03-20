@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Miguel Miranda</title>
+    <link rel="icon" href="image/MM.png">
+    <link type="text/css" rel="stylesheet" media="screen" href="css/index.css"/>
+
+</head>
+
+
+<body class="claro">
+
+
+    <header>
+        
+            <h1>Miguel Miranda de Andrade</h1>
+            <img id="fotoperfil" src="image/perfil.png" >
+        <section>
+            <h2>Email: miguelmiranda2249@gmail.com</h2>
+            <h2>Tel. (11) 97784-4124</h2>
+            
+        </section>
+    </header>
+
+
+    <section class="controles">
+        <div>
+            <button id = "acender"> Modo Claro </button>
+            <button id = "escuro"> Modo Escuro </button>
+        </div>
+    </section>
+
+
+
+    <section >
+
+        <selection>
+            <h2>DADOS COMPLEMENTARES</h2>
+            <hr>
+            <p>Brasileiro, solteiro, 09/06/2003</p>
+            <p>Rua: Roque de Paula Monteiro, nº317, ap 43 -Jaçanã - Zona Norte</p>
+            <p>CEP: 02272-000 - São Paulo - SP</p>
+        </selection>
+
+        <section class="rose">
+            <h2>OBJETIVO</h2>
+            <hr>
+            <p>Minha carreira está no início, mas estou em busca de uma oportunidade para demonstrar meu talento e minhas habilidades na área de Informática como Aprendiz.
+            </p>
+        </section>
+
+        <h2>FORMAÇÃO</h2>
+        <hr>
+        <h3>IFSP- Instituto Federal de Ciência Educação e Tecnologia de São Paulo
+            Ensino médio/técnico em informática.</h3>
+        <ul>
+            <li>Ensino Médio;</li>
+            <li>Desenvolvimento em linguagem C;</li>
+            <li>Desenvolvimento em Java;</li>
+            <li>Desenvolvimento em My SQL;</li>
+            <li>Windows 10, Internet e Pacote Office;</li>
+            <li>Access;</li>
+            <li>Desenvolvimento em redes de computadores;</li>
+            <li>Portas lógicas;</li>
+            <li>Raciocínio lógico;</li>
+            <li>Desenvolvimento em RPG Maker;</li>
+            <li>Desenvolvimento html;</li>
+            <li>Banco de Dados;</li>
+        </ul>
+        <p>Conclusão em dezembro/2021.</p>
+    </section>
+    <section class="rose">
+        <h2>CURSOS COMPLEMENTARES</h3>
+        <hr>
+
+        <h3>IOS – Instituto da Oportunidade Social </h3>
+        <h4>Atendimento ao cliente com Zendesk Support.</h4>
+        <ul>
+            <li>Teoria e Prática dos Processos na plataforma Zendesk;</li>
+            <li>Funcionalidades que envolvem a plataforma Zendesk;</li>
+            <li>Windows 10, Internet e Pacote Office 2016;</li>
+            <li>Comunicação e Expressão;</li>
+            <li>Cálculo Matemático;</li>
+            <li>Workshop;</li>
+        </ul>
+        <p>Concluído em agosto/2020.</p>
+    
+        <h3>EMIA– Escola Municipal de Iniciação Artística.</h3>
+        <h3>Teatro e Música.</h3>
+        <ul>
+            <li>Prática de movimentos corporais;</li>
+            <li>Apresentações públicas;</li>
+            <li>Prática de comunicação e expressão;</li>
+            <li>Prática objetos teatrais;</li>
+            <li>Articulação falas;</li>
+            <li>Prática de instrumentos musicais;</li>
+            <li>Interpretação de Partituras;</li>
+            <li>Flautista;</li>
+        </ul>
+        <P>Concluído em novembro/2016.</p>
+
+        <h3>DELL- Nasdaq Dell</h3>
+        <h3>Palestras.</h3>
+
+        <ul>
+            <li>DellConecta: O mundo está mudando. Não fique parado!</li>
+            <li>DellConecta: Produtividade e gestão do tempo.</li>
+            <li>DellConecta: O que é um escritório Moderno? Como o profissional do futuro trabalhará!</li>
+            <li>DellConecta: Uma Jornada de Sucesso! A Carreira do Presidente da Dell Brasil.</li>
+            <li>DellConecta: Primeiros passos com impressão 3D.</li>
+            <li>DellConecta: Analistas de Dados: Quem são? O que fazem? Do que se alimentam?</li>
+            <li>DellConecta: Ética no mundo digital - Consequências do mau uso.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+        <hr>
+        <ul>
+            <li>Auxílio voluntário em monitoria de informática para crianças</li>
+            <li>Projeto independente em grupo, desenvolvido o jogo "O livro incompleto" de RPG na linguaguem Ruby</li>
+            <li>Projeto independente em grupo, desenvolvido um website "Resposas IFSP", na linguagem html, css e javascript</li>
+        </ul>
+    </section>
+    </body>
+
+    
+    <script src= "jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    
+    var foto = document.getElementById("fotoperfil");
+
+    foto.onmouseover = function(){
+        foto.classList.remove("foto_sem_mouse");
+        foto.classList.add("foto_com_mouse");
+    }
+
+    foto.onmouseout = function(){
+        foto.classList.remove("foto_com_mouse");
+        foto.classList.add("foto_sem_mouse");
+    }
+    
+    </script>
+
+    <script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+        $("body").removeClass("escuro");
+        $("body").addClass("claro");
+    });
+
+        $("#escuro").click(function(){
+        $("body").addClass("escuro");
+        $("body").removeClass("claro");
+    });
+
+    });
+    </script>
+
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    margin: 0;
+    width: 100vw;
+    background-color: #cc8080af ;
+}
+
+header{
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    display: flex;
+    margin-top: 2vh;
+
+
+}
+header h1{
+    text-align: center;
+}
+
+@media screen and (min-width: 701px) {
+    header img{
+        width:  30vh;
+        height: 30vh;
+        border-radius: 30vh;
+        margin-left: 3vw;
+    
+    }
+    
+}
+@media screen and(max-width: 700px){
+    header img{
+    width: 60vh;
+    height: 60vh;
+    border-radius: 60vh;
+    margin-left: 3vw;
+    }
+}
+
+
+header section{
+    margin-left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Playfair Display;
+}
+
+header section h2{
+    font-weight: 400;
+    margin-left: 0;
+    padding-top: 0vh;
+}
+
+section hr{
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
+}
+
+section h2{
+    text-align: center;
+
+}
+
+section h3{
+    text-align: center;
+}
+
+section h4{
+    text-align: center;
+}
+section ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    background-color:white;
+    border-radius: 5px;
+    border:none;
+}
+
+.foto_com_mouse{
+    width:  250px;
+    height: 250px;
+    transition: 0.4s;
+    border: 5px solid black;
+}
+.foto_sem_mouse{
+    width: 200px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+#acender, #escuro{
+    cursor: pointer;
+}
+
+.escuro{
+    background-color:rgb(45, 10, 49);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.claro{
+    background-color: #cc8080af;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+}
